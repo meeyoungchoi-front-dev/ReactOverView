@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+// 내가 만든 컴포넌트 import
+import Box from "./Box"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <div className="box">Box1 me</div>
+      <div className="box">Box2 me</div>
+      <div className="box">Box3 me</div>
+      <div className="box">Box3 me</div> */
+      
+      
+      }
+      <Box name="코알누" num="1"></Box>
+      <Box name="태민" num="2"></Box>
+      <Box name="양요섭" num="3"></Box>
+      <Box name="윤두준" num="4"></Box>
     </div>
   );
 }
