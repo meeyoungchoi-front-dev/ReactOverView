@@ -1,7 +1,61 @@
 .box {
-  box-sizing: border-box;
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  border: 1px solid pink;
+  padding: 20px 30px;
+  margin-top: 50px;
+  margin-left: 140px;
+  width: 250px;
+  height: 100%;
+  border: 1px solid orange;
+}
+
+.box button {
+  margin-left: 10px;
+}
+
+.BlogHeader{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.Subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 1px solid blueviolet; */
+}
+
+.Subtitle h2 {
+  display: inline-block;
+  /* border: 1px solid red; */
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.BlogTitle  {
+  text-align: center;
+}
+
+.BlogTitle a {
+  color: green;
+  text-decoration-line: none;
+}
+
+
+.BlogNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.BlogNav li {
+  list-style-type: none;
+  
+}
+
+.BlogNav li a {
+  text-decoration-line: none;
+  color: gray;
+  font-weight: 700;
 }

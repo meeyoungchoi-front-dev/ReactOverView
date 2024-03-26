@@ -1,3 +1,7 @@
+# 생활코딩 React
+## React Blog 만들기
+![alt text](image.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

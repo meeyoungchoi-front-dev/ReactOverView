@@ -6,12 +6,15 @@ import React from 'react';
 // 컴포넌트에서 값을 불러와서 사용하고 싶으면 props를 사용하면 된다
 function Box(props) {
     const clickMe = () => {
-        alert("리액트 입문을 축하합니다!!");
+        alert("컨텐츠가 준비중 입니다!!");
     }
-    return (<div className="box">
-                Box{props.num} {props.name}
-                <button onClick={clickMe}>클릭!</button>
-            </div>)
+    
+    return (
+                <div className="box" >
+                    {props.content}
+                    <button onClick={clickMe}>보러가기!</button>
+                </div>
+            )
 }
 
 export default Box
