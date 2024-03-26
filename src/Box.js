@@ -9,29 +9,28 @@ function Box(props) {
         alert("컨텐츠가 준비중 입니다!!");
     }
 
-    const lis = [];
+    const arrays = [];
     for (let i = 0; i < props.contents.length; i++) {
-        lis.push(props.contents[i].title);
+        arrays.push(props.contents[i].title);
     }
 
     const res = [];
     for (let i = 0; i < 10; i++) {
         res.push(
-            <div className="box" >
-                <div className="BoxImage"></div>
-                <div className="ContentWrapper">
-                    {lis[i]}
-                    <button onClick={clickMe}>보러가기!</button>
-                </div>
-                
-            </div>
-            );
+                    <div className="box" >
+                        <div className="BoxImage"></div>
+                        <div className="ContentWrapper">
+                            {arrays[i]}
+                            <button onClick={clickMe}>보러가기!</button>
+                        </div>
+                    </div>
+                );
     }
-    return (<div className="BoxContainer">
-               {res}
-            </div>
-                
-            )
+        return (
+                <div className="BoxContainer">
+                    {res}
+                </div>
+                )
 }
 
 export default Box
