@@ -1,11 +1,20 @@
+.BoxContainer {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .box {
   display: inline-block;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
   margin-top: 50px;
   margin-left: 140px;
-  width: 250px;
-  height: 100%;
-  border: 1px solid orange;
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
 }
 
 .box button {
@@ -56,6 +65,23 @@
 
 .BlogNav li a {
   text-decoration-line: none;
-  color: gray;
-  font-weight: 700;
+  color: darkgoldenrod;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+
+.BoxImage {
+  width: 100%;
+  height: 200px;
+  background-color: gray;
+}
+
+.ContentWrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }

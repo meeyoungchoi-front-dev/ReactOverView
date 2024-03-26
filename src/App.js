@@ -37,24 +37,25 @@ function App() {
     {id:4, title: 'React'},
   ]
 
+  const contents = [
+    {title: 'content1'},
+    {title: 'content2'},
+    {title: 'content3'},
+    {title: 'content4'},
+    {title: 'content5'},
+    {title: 'content6'},
+    {title: 'content7'},
+    {title: 'content8'},
+    {title: 'content9'},
+    {title: 'content10'}
+  ]
+
   return (
     <div className="App">
       <Header blogTitle="MyBlog"></Header>
       <Article title="welcome," body="Coding World!!"></Article>
       <Nav topics={topics}></Nav>
-      <Box content="content1"></Box>
-      <Box content="content2"></Box>
-      <Box content="content3"></Box>
-      <Box content="content4"></Box>
-      <Box content="content5"></Box>
-      <Box content="content6"></Box>
-      <Box content="content7"></Box>
-      <Box content="content8"></Box>
-      <Box content="content9"></Box>
-      <Box content="content10"></Box>
-      <Box content="content11"></Box>
-      <Box content="content12"></Box>
-
+      <Box contents={contents}></Box>
     </div>
   );
 }

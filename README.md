@@ -1,6 +1,11 @@
 # 생활코딩 React
 ## React Blog 만들기
-![alt text](image.png)
+### 결과화면
+![alt text](image_result.png)
+### 사용 기술
+- 컴포넌트 사용하여 HTML 레이아웃 분리
+- props 사용하여 데이터를 컴포넌트로 전달
+- 버튼 event 사용하여 버튼 클릭시 alert 띄움
 
 # Getting Started with Create React App
 
