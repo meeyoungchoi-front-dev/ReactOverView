@@ -16,7 +16,7 @@ function Nav(props) {
   const lis = [];
   for (let i = 0; i < props.topics.length; i++) {
     let t = props.topics[i];
-    lis.push(<li key={t.id}><a href={'/read/' + t.id}>{t.title}</a></li>)
+    lis.push(<li key={t.num}><a href={'/read/' + t.id}>{t.title}</a></li>)
   }
   return <nav className="BlogNav">
             {lis}
@@ -31,23 +31,23 @@ function Article(props) {
 
 function App() {
   const topics = [
-    {id:1, title: 'html'},
-    {id:2, title: 'css'},
-    {id:3, title: 'javascript'},
-    {id:4, title: 'React'},
+    {num:2024, title: 'html'},
+    {num:2025, title: 'css'},
+    {num:2026, title: 'javascript'},
+    {num:2027, title: 'React'},
   ]
 
   const contents = [
-    {title: 'content1'},
-    {title: 'content2'},
-    {title: 'content3'},
-    {title: 'content4'},
-    {title: 'content5'},
-    {title: 'content6'},
-    {title: 'content7'},
-    {title: 'content8'},
-    {title: 'content9'},
-    {title: 'content10'}
+    {id:1, title: 'content1'},
+    {id:2, title: 'content2'},
+    {id:3, title: 'content3'},
+    {id:4, title: 'content4'},
+    {id:5, title: 'content5'},
+    {id:6, title: 'content6'},
+    {id:7, title: 'content7'},
+    {id:8, title: 'content8'},
+    {id:9, title: 'content9'},
+    {id:10, title: 'content10'}
   ]
 
   return (
